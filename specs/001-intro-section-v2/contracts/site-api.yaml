@@ -1,0 +1,191 @@
+# Documentation Site API Contract
+
+## Overview
+API contract for the Physical AI & Humanoid Robotics book documentation site. This defines the interface for content retrieval and interaction with the futuristic cyberpunk UI elements.
+
+## Base URL
+```
+https://physical-ai-humanoid-robotics.github.io/
+```
+
+## Content Endpoints
+
+### GET /api/content/intro
+Retrieve introduction section content with cyberpunk styling configuration.
+
+#### Request
+```
+GET /api/content/intro
+Headers:
+  Accept: application/json
+```
+
+#### Response
+```
+Status: 200 OK
+Content-Type: application/json
+
+{
+  "hero": {
+    "title": "Physical AI & Humanoid Robotics",
+    "subtitle": "Embodied Intelligence in Action",
+    "animationType": "rotating-silhouette",
+    "theme": {
+      "primaryColor": "#00FFFF",
+      "secondaryColor": "#FF00FF",
+      "backgroundColor": "#000000"
+    },
+    "callToAction": {
+      "text": "Begin Journey",
+      "url": "/docs/intro/"
+    }
+  },
+  "timeline": {
+    "weeks": [
+      {
+        "weekNumber": 1,
+        "title": "Intro Week 1",
+        "category": "Intro",
+        "description": "Physical AI foundations"
+      },
+      {
+        "weekNumber": 2,
+        "title": "Intro Week 2",
+        "category": "Intro",
+        "description": "Robotics basics"
+      }
+      // ... up to week 13
+    ]
+  },
+  "aboutThisBook": {
+    "title": "About This Book",
+    "content": "Full markdown content focusing on Physical AI...",
+    "targetAudience": ["O Level", "A Level", "Engineering Students"],
+    "learningObjectives": ["Understand Physical AI concepts", "Learn robotics fundamentals", "Master humanoid development"]
+  }
+}
+```
+
+### GET /api/content/week/{number}
+Retrieve content for a specific week.
+
+#### Request
+```
+GET /api/content/week/1
+Headers:
+  Accept: application/json
+```
+
+#### Response
+```
+Status: 200 OK
+Content-Type: application/json
+
+{
+  "weekNumber": 1,
+  "title": "Intro Week 1",
+  "category": "Intro",
+  "content": "Full markdown content for the week...",
+  "learningObjectives": ["Objective 1", "Objective 2"],
+  "prerequisites": ["Prerequisite 1"],
+  "estimatedTime": "3 hours"
+}
+```
+
+### GET /api/theme/config
+Retrieve theme configuration for cyberpunk styling.
+
+#### Request
+```
+GET /api/theme/config
+Headers:
+  Accept: application/json
+```
+
+#### Response
+```
+Status: 200 OK
+Content-Type: application/json
+
+{
+  "primaryColor": "#00FFFF",
+  "secondaryColor": "#FF00FF",
+  "backgroundColor": "#000000",
+  "fontFamily": "Rajdhani, Exo 2, Orbitron, sans-serif",
+  "glowIntensity": 75,
+  "hologramEffect": true,
+  "floatingPanels": true,
+  "animationSpeed": 10
+}
+```
+
+## UI Interaction Endpoints
+
+### POST /api/analytics/event
+Track user interactions with UI elements.
+
+#### Request
+```
+POST /api/analytics/event
+Headers:
+  Content-Type: application/json
+  Accept: application/json
+
+{
+  "event": "hero_animation_view",
+  "userId": "optional_user_id",
+  "timestamp": "2025-12-07T10:00:00Z",
+  "properties": {
+    "animationType": "rotating-silhouette",
+    "viewDuration": 30
+  }
+}
+```
+
+#### Response
+```
+Status: 200 OK
+Content-Type: application/json
+
+{
+  "status": "recorded",
+  "eventId": "unique_event_id"
+}
+```
+
+## Error Responses
+
+### 404 Not Found
+```
+{
+  "error": "Content not found",
+  "code": "CONTENT_NOT_FOUND",
+  "message": "The requested content does not exist"
+}
+```
+
+### 400 Bad Request
+```
+{
+  "error": "Invalid request",
+  "code": "INVALID_REQUEST",
+  "message": "The request parameters are invalid"
+}
+```
+
+### 500 Internal Server Error
+```
+{
+  "error": "Internal server error",
+  "code": "INTERNAL_ERROR",
+  "message": "An unexpected error occurred"
+}
+```
+
+## Rate Limiting
+- All endpoints are rate-limited to 100 requests per minute per IP
+- Exceeding the limit results in a 429 status code
+
+## Authentication
+- Public endpoints require no authentication
+- Analytics endpoints may accept optional user tokens for personalized tracking

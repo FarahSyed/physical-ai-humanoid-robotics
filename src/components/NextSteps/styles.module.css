@@ -1,0 +1,72 @@
+.nextStepsContainer {
+  padding: 3rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nextStepsTitle {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--ifm-color-primary);
+  margin-bottom: 2rem;
+  font-family: var(--ifm-font-family-base);
+}
+
+.nextStepsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+.nextStepCard {
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-primary-light);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.nextStepCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  text-decoration: none;
+  border-color: var(--ifm-color-primary);
+}
+
+.nextStepTitle {
+  color: var(--ifm-color-primary);
+  margin: 0 0 0.5rem 0;
+  font-size: 1.3rem;
+}
+
+.nextStepDescription {
+  color: var(--ifm-color-content);
+  margin: 0.5rem 0 1rem 0;
+}
+
+.nextStepLink {
+  color: var(--ifm-color-primary-dark);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .nextStepsContainer {
+    padding: 2rem 0;
+  }
+
+  .nextStepsTitle {
+    font-size: 1.5rem;
+  }
+
+  .nextStepsGrid {
+    grid-template-columns: 1fr;
+  }
+}

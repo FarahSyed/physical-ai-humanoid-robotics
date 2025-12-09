@@ -208,3 +208,10 @@ Wait for consent; never auto-create ADRs. Group related decisions (stacks, authe
 
 ## Code Standards
 See `.specify/memory/constitution.md` for code quality, testing, performance, security, and architecture principles.
+
+## Active Technologies
+- Markdown, HTML, CSS, JavaScript (Docusaurus v3.6+ with React) + Docusaurus, React, Node.js, npm/yarn (001-intro-section-v2)
+- Static files served via GitHub Pages (001-intro-section-v2)
+
+## Recent Changes
+- 001-intro-section-v2: Added Markdown, HTML, CSS, JavaScript (Docusaurus v3.6+ with React) + Docusaurus, React, Node.js, npm/yarn

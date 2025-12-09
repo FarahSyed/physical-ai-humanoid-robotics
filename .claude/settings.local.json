@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx docusaurus start --port 3002)",
+      "Bash(curl -I http://localhost:3002)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
