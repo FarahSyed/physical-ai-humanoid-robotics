@@ -34,6 +34,7 @@
   margin: 2rem auto;
   display: flex;
   justify-content: center;
+  min-height: 375px; /* Match the height of the SVG robot */
 }
 
 .humanoidSilhouette {

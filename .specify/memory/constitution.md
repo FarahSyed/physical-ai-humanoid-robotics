@@ -1,5 +1,17 @@
+<!--
+Sync Impact Report:
+- Version change: 1.0.0 â†’ 1.2.0 (Minor: Consolidated duplicated requirements, added version tracking and compliance monitoring)
+- Modified principles: Content Verification & Citation Requirements, Quality Assurance (removed duplicated plagiarism requirement), Learning Outcomes (removed duplicated learning outcomes requirement)
+- Added sections: Compliance Monitoring
+- Templates requiring updates: âš  pending review of .specify/templates/plan-template.md, .specify/templates/spec-template.md, .specify/templates/tasks-template.md
+- Follow-up TODOs: None
+-->
+
 # Physical AI & Humanoid Robotics: Embodied Intelligence in Action
 ## Project Constitution
+**Version:** 1.2.0
+**Ratification Date:** 2025-01-01
+**Last Amended:** 2025-12-13
 
 ### Preamble: Project Vision and Purpose
 
@@ -15,17 +27,29 @@ The project recognizes that the future of AI lies in its physical manifestationâ
 - Follow established coding standards for ROS 2, Python, C++, and JavaScript/TypeScript
 - Implement continuous integration with automated code quality checks
 
-**Content Accuracy & Verifiability**
-- All technical content must be sourced from official documentation (ROS 2, NVIDIA Isaac, Unity, Gazebo)
+**Content Accuracy & Verification Standards**
+- All technical content must be sourced from official documentation (ROS 2, NVIDIA Isaac, Unity, Gazebo, and other verified sources)
+- Accuracy through primary source verification (e.g., official docs from NVIDIA, ROS.org, hardware vendors)
 - Include version-specific citations and regular content validation checks
+- All factual claims must be traceable to sources (e.g., updated hardware prices verified from vendors like NVIDIA's $249 for Jetson Orin Nano Super Developer Kit)
 - Maintain a content verification pipeline with expert peer reviews
 - Ensure all code examples are tested against actual hardware or simulation environments
+- All claims verified against current sources (as of Dec 2025)
+- Strict adherence to provided course content, with updates for 2025 accuracy (e.g., AWS g5.2xlarge at ~$1.21/hour, Unitree G1 at ~$13,500-16,000)
+
+**Technical Rigor & Reproducibility Standards**
+- Reproducibility: all technical claims, code snippets, and hardware recommendations must be cited and testable
+- Rigor: prefer peer-reviewed papers, official releases, and industry standards; incorporate 2025 updates like ROS 2 Kilted Kaiju and NVIDIA Isaac Sim 5.1.0
+- Include practical examples reproducible in simulated environments
+- Implement reproducible build and deployment pipelines for all examples
+- Maintain comprehensive hardware compatibility matrices with verified configurations
 
 **Accessibility & Inclusive Design**
 - Structure content with progressive complexity from O/A Level fundamentals to professional applications
 - Provide alternative explanations for different learning styles (visual, textual, hands-on)
 - Include comprehensive alt-text for all diagrams and interactive elements
 - Ensure Docusaurus deployment is screen-reader friendly and WCAG 2.1 compliant
+- Clarity for advanced audience (engineers, researchers, students with AI/robotics background)
 
 ### Ethical Guidelines
 
@@ -49,6 +73,13 @@ The project recognizes that the future of AI lies in its physical manifestationâ
 
 ### Development Standards
 
+**Content Verification & Citation Requirements**
+- Citation format: IEEE style for technical references
+- Source types: Minimum 50% from official documentation, peer-reviewed articles (e.g., arXiv, IEEE), and vendor sites
+- Plagiarism check: 0% tolerance before finalization
+- Writing clarity: Flesch-Kincaid grade 12-14, with technical depth including code examples in Python/ROS 2
+- Zero plagiarism detected
+
 **Spec-Driven Development with Spec-Kit Plus**
 - All content and code must be generated through Spec-Driven workflows using `/sp.specify`, `/sp.plan`, `/sp.tasks`, and `/sp.implement`
 - Maintain comprehensive specifications for each of the four core modules (ROS 2, Digital Twins, NVIDIA Isaac, VLA)
@@ -60,12 +91,16 @@ The project recognizes that the future of AI lies in its physical manifestationâ
 - Structure content in 13-week modules with weekly breakdowns and learning objectives
 - Implement interactive code playgrounds for simulation examples
 - Include hardware compatibility matrices for RTX workstations, Jetson kits, and robot platforms (Unitree Go2, etc.)
+- Word count: 100,000-150,000 words total (approx. 20,000-30,000 per module, including chapters and supplementary sections)
+- Format: Markdown convertible to PDF with embedded citations, diagrams, and code blocks
+- Strict adherence to provided course content, with updates for 2025 accuracy (e.g., AWS g5.2xlarge at ~$1.21/hour, Unitree G1 at ~$13,500-16,000)
 
 **Quality Assurance**
 - Mandate peer reviews for all content before publication
 - Implement automated testing for all code examples across multiple platforms
 - Conduct regular accessibility audits of the deployed book
 - Maintain a feedback loop with end users for continuous improvement
+- Passes fact-checking review, ensuring alignment with course goals like bridging digital AI and physical embodiment
 
 ### Deployment Rules
 
@@ -94,18 +129,28 @@ The project recognizes that the future of AI lies in its physical manifestationâ
 - Include practical assessments requiring simulation and deployment of robot behaviors
 - Implement competency-based progression with clear milestone checkpoints
 - Include both theoretical understanding and practical implementation evaluations
+- Comprehensive coverage of learning outcomes
 
-**Hardware Compatibility**
-- Validate all examples against specified hardware requirements (RTX workstations, Jetson kits)
-- Provide alternative pathways for different hardware configurations
-- Include cost-benefit analysis for different hardware options
-- Maintain compatibility matrices with regular updates for new hardware releases
+**Content Quality Metrics**
+- Minimum 20 sources per module (total 80+ for the book)
+- All technical content validated against current documentation and hardware specifications
+- Content accuracy verified through multiple verification sources
+- Technical depth appropriate for target audience (O/A Level to professional level)
 
 **Performance Metrics**
 - Track engagement metrics and learning outcomes through analytics
 - Monitor content accessibility and usability across different user groups
 - Implement feedback collection mechanisms for continuous improvement
 - Maintain quality metrics for content accuracy and technical correctness
+
+### Compliance Monitoring
+
+All project activities must undergo regular compliance reviews to ensure adherence to these constitutional principles:
+1. Quarterly compliance audits to verify implementation of core principles
+2. Annual technical accuracy verification against current documentation and hardware specifications
+3. Regular plagiarism scans using automated tools to maintain 0% tolerance standard
+4. Accessibility compliance checks to ensure WCAG 2.1 standards are maintained
+5. Code coverage monitoring to maintain 95%+ test coverage requirements
 
 ### Amendment Process
 
