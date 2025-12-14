@@ -1,6 +1,6 @@
 # Feature Specification: Fix Documentation UX Issues
 
-**Feature Branch**: `001-fix-docs-ux-issues`
+**Feature Branch**: `002-fix-docs-ux-issues`
 **Created**: 2025-12-09
 **Status**: Draft
 **Input**: User description: "after reviewing the current state these are the issues I found:

@@ -4,7 +4,7 @@
 
 - **Status:** Accepted
 - **Date:** 2025-12-13
-- **Feature:** 001-ros2-nervous-system
+- **Feature:** 003-ros2-nervous-system
 - **Context:** The module needs to establish a consistent approach to code examples that balances educational clarity with practical applicability. This decision affects all code examples, reader comprehension, and the overall learning experience.
 
 <!-- Significance checklist (ALL must be true to justify this ADR)
@@ -62,7 +62,7 @@ Alternative B: Pseudocode and conceptual examples
 
 ## References
 
-- Feature Spec: E:/New folder/New folder/physical-ai-humanoid-robotics/specs/001-ros2-nervous-system/spec.md
-- Implementation Plan: E:/New folder/New folder/physical-ai-humanoid-robotics/specs/001-ros2-nervous-system/plan.md
+- Feature Spec: E:/New folder/New folder/physical-ai-humanoid-robotics/specs/003-ros2-nervous-system/spec.md
+- Implementation Plan: E:/New folder/New folder/physical-ai-humanoid-robotics/specs/003-ros2-nervous-system/plan.md
 - Related ADRs: ADR-0001, ADR-0002
 - Evaluator Evidence: Plan analysis showing requirements for reproducible examples and reader experience <!-- link to eval notes/PHR showing graders and outcomes -->

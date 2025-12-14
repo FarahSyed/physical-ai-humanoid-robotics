@@ -4,7 +4,7 @@
 
 - **Status:** Accepted
 - **Date:** 2025-12-13
-- **Feature:** 001-ros2-nervous-system
+- **Feature:** 003-ros2-nervous-system
 - **Context:** The module needs to establish a consistent and stable development environment for ROS 2 humanoid robotics content. This decision impacts all code examples, compatibility requirements, and long-term maintainability of the educational content. The target audience includes engineers, researchers, and students who need reproducible examples that work in real environments.
 
 <!-- Significance checklist (ALL must be true to justify this ADR)
@@ -66,7 +66,7 @@ Alternative B: ROS 2 Humble Hawksbill (current LTS at time of planning)
 
 ## References
 
-- Feature Spec: E:/New folder/New folder/physical-ai-humanoid-robotics/specs/001-ros2-nervous-system/spec.md
-- Implementation Plan: E:/New folder/New folder/physical-ai-humanoid-robotics/specs/001-ros2-nervous-system/plan.md
+- Feature Spec: E:/New folder/New folder/physical-ai-humanoid-robotics/specs/003-ros2-nervous-system/spec.md
+- Implementation Plan: E:/New folder/New folder/physical-ai-humanoid-robotics/specs/003-ros2-nervous-system/plan.md
 - Related ADRs: ADR-0002, ADR-0003
 - Evaluator Evidence: Plan analysis showing requirements for stability and industrial adoption <!-- link to eval notes/PHR showing graders and outcomes -->

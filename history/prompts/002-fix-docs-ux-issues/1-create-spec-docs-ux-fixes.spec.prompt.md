@@ -6,18 +6,18 @@ date: 2025-12-09
 surface: agent
 model: Claude Sonnet 4.5
 feature: fix-docs-ux-issues
-branch: 001-fix-docs-ux-issues
+branch: 002-fix-docs-ux-issues
 user: Claude Code User
 command: /sp.specify
 labels: [specification, documentation, ux, docusaurus]
 links:
-  spec: specs/001-fix-docs-ux-issues/spec.md
+  spec: specs/002-fix-docs-ux-issues/spec.md
   ticket: null
   adr: null
   pr: null
 files:
- - specs/001-fix-docs-ux-issues/spec.md
- - specs/001-fix-docs-ux-issues/checklists/requirements.md
+ - specs/002-fix-docs-ux-issues/spec.md
+ - specs/002-fix-docs-ux-issues/checklists/requirements.md
 tests:
 
 ---

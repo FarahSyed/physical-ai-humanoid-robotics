@@ -1,6 +1,6 @@
 # Feature Specification: Module 1: The Robotic Nervous System (ROS 2)
 
-**Feature Branch**: `001-ros2-nervous-system`
+**Feature Branch**: `003-ros2-nervous-system`
 **Created**: 2025-12-13
 **Status**: Draft
 **Input**: User description: "Module 1: The Robotic Nervous System (ROS 2) for the book 'Physical AI & Humanoid Robotics: Embodied Intelligence in Action'

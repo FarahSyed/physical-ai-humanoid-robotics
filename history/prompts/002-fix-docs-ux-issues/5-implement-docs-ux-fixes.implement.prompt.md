@@ -6,14 +6,14 @@ date: 2025-12-09
 surface: agent
 model: Claude Sonnet 4.5
 feature: fix-docs-ux-issues
-branch: 001-fix-docs-ux-issues
+branch: 002-fix-docs-ux-issues
 user: Claude Code User
 command: /sp.implement
 labels: [implementation, documentation, ux, docusaurus]
 links:
-  spec: specs/001-fix-docs-ux-issues/spec.md
-  plan: specs/001-fix-docs-ux-issues/plan.md
-  tasks: specs/001-fix-docs-ux-issues/tasks.md
+  spec: specs/002-fix-docs-ux-issues/spec.md
+  plan: specs/002-fix-docs-ux-issues/plan.md
+  tasks: specs/002-fix-docs-ux-issues/tasks.md
   ticket: null
   adr: null
   pr: null
@@ -29,7 +29,7 @@ files:
  - docs/intro/about-this-book.md
  - docs/intro/welcome.mdx
  - docs/intro/prerequisites.md
- - history/prompts/001-fix-docs-ux-issues/5-implement-docs-ux-fixes.implement.prompt.md
+ - history/prompts/002-fix-docs-ux-issues/5-implement-docs-ux-fixes.implement.prompt.md
 tests:
 
 ---

@@ -5,7 +5,13 @@
       "Bash(curl -I http://localhost:3002)",
       "Bash(cat \"E:/New folder/New folder/physical-ai-humanoid-robotics/history/adr/0001-ros-2-distribution-and-development-environment.md\")",
       "Bash(cat \"E:/New folder/New folder/physical-ai-humanoid-robotics/history/adr/0003-programming-language-and-code-implementation-strategy.md\")",
-      "Bash(.specify/scripts/bash/check-prerequisites.sh --json --require-tasks --include-tasks)"
+      "Bash(.specify/scripts/bash/check-prerequisites.sh --json --require-tasks --include-tasks)",
+      "Bash(gh pr create --title \"feat(ros2): implement ROS 2 nervous system module with safety and accessibility\" --body \"$(cat <<''EOF''\n## Summary\n- Implement comprehensive ROS 2 nervous system module specification, plan, and tasks\n- Add safety protocols and best practices for humanoid robotics applications\n- Include accessibility features following WCAG 2.1 guidelines with progressive complexity\n- Create centralized quality standards document to reduce duplication\n- Develop version compatibility matrix for ROS 2 Jazzy Jalisco ecosystem\n- Enhance integration validation between chapters with new tasks (M1-T41a, M1-T41b)\n- Fix task dependency inconsistencies and clarify validation criteria\n- Add hardware validation tasks for Jetson Orin Nano compatibility\n- Include performance requirements with resource utilization benchmarks\n\n## Test plan\n- [ ] Verify all new spec, plan, and tasks files are correctly structured\n- [ ] Confirm safety requirements are properly integrated across all artifacts\n- [ ] Validate accessibility features meet WCAG 2.1 guidelines\n- [ ] Test version compatibility matrix against actual ROS 2 packages\n- [ ] Ensure integration tasks (M1-T41a, M1-T41b) function as expected\n- [ ] Verify hardware validation tasks work on target platforms\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\nEOF\n)\")",
+      "Bash(git branch -m 001-ros2-nervous-system 003-ros2-nervous-system)",
+      "Bash(git rev-parse --abbrev-ref HEAD)",
+      "Bash(git push --set-upstream origin 003-ros2-nervous-system)",
+      "Bash(git push origin --delete 001-ros2-nervous-system)",
+      "Bash(find . -name \"*.md\" -exec grep -l \"001-ros2-nervous-system\" {} ;)"
     ],
     "deny": [],
     "ask": []

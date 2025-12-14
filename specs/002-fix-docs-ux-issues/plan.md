@@ -1,7 +1,7 @@
 # Implementation Plan: Fix Documentation UX Issues
 
-**Branch**: `001-fix-docs-ux-issues` | **Date**: 2025-12-09 | **Spec**: specs/001-fix-docs-ux-issues/spec.md
-**Input**: Feature specification from `/specs/001-fix-docs-ux-issues/spec.md`
+**Branch**: `002-fix-docs-ux-issues` | **Date**: 2025-12-09 | **Spec**: specs/002-fix-docs-ux-issues/spec.md
+**Input**: Feature specification from `/specs/002-fix-docs-ux-issues/spec.md`
 
 **Note**: This template is filled in by the `/sp.plan` command. See `.specify/templates/commands/plan.md` for the execution workflow.
 

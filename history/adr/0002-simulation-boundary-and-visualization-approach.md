@@ -4,7 +4,7 @@
 
 - **Status:** Accepted
 - **Date:** 2025-12-13
-- **Feature:** 001-ros2-nervous-system
+- **Feature:** 003-ros2-nervous-system
 - **Context:** The module needs to define clear boundaries between what content belongs in Module 1 versus Module 2 to avoid overlap and maintain focused learning objectives. This decision affects how URDF visualization and simulation content is structured.
 
 <!-- Significance checklist (ALL must be true to justify this ADR)
@@ -61,7 +61,7 @@ Alternative B: No visualization at all
 
 ## References
 
-- Feature Spec: E:/New folder/New folder/physical-ai-humanoid-robotics/specs/001-ros2-nervous-system/spec.md
-- Implementation Plan: E:/New folder/New folder/physical-ai-humanoid-robotics/specs/001-ros2-nervous-system/plan.md
+- Feature Spec: E:/New folder/New folder/physical-ai-humanoid-robotics/specs/003-ros2-nervous-system/spec.md
+- Implementation Plan: E:/New folder/New folder/physical-ai-humanoid-robotics/specs/003-ros2-nervous-system/plan.md
 - Related ADRs: ADR-0001, ADR-0003
 - Evaluator Evidence: Plan analysis showing requirements for clear Module 1/2 boundaries <!-- link to eval notes/PHR showing graders and outcomes -->
