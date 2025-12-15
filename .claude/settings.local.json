@@ -11,7 +11,16 @@
       "Bash(git rev-parse --abbrev-ref HEAD)",
       "Bash(git push --set-upstream origin 003-ros2-nervous-system)",
       "Bash(git push origin --delete 001-ros2-nervous-system)",
-      "Bash(find . -name \"*.md\" -exec grep -l \"001-ros2-nervous-system\" {} ;)"
+      "Bash(find . -name \"*.md\" -exec grep -l \"001-ros2-nervous-system\" {} ;)",
+      "Bash(.specify/scripts/bash/create-new-feature.sh --json \"in the module 1 in \"\"003-ros2-nervous-system\"\" I see the content of the book contain heavy code examples it is a theory book which can contain some code snippets for reference but the book shouldn''t be code heavy\" --number 1 --short-name \"reduce-book-code-examples\")",
+      "Bash(git checkout 003-ros2-nervous-system)",
+      "Bash(rm -rf specs/001-reduce-book-code-examples)",
+      "Bash(.specify/scripts/bash/setup-plan.sh --json)",
+      "Bash(git rev-parse --git-dir)",
+      "Bash(cat .gitignore)",
+      "Bash(wc -w docs/week8-10-isaac/chapter-*.md)",
+      "Bash(git fetch --all --prune)",
+      "Bash(rm -rf \"E:/New folder/New folder/physical-ai-humanoid-robotics/folderphysical-ai-humanoid-roboticsspecs001-conversational-robotics\")"
     ],
     "deny": [],
     "ask": []

@@ -1,0 +1,55 @@
+{
+  "app": {
+    "name": "simple_rl_environment",
+    "modules": [
+      {
+        "name": "isaac.gym.EnvRenderer",
+        "config": {
+          "renderer": {
+            "camera_subscriber": "gym_cameras",
+            "camera_info_subscriber": "gym_camera_info",
+            "render_publisher": "display_image"
+          }
+        }
+      },
+      {
+        "name": "isaac.gym.RewardGenerator",
+        "config": {
+          "reward_calculator": {
+            "observation_subscriber": "robot/observations",
+            "action_subscriber": "robot/actions",
+            "reward_publisher": "rl_rewards"
+          }
+        }
+      },
+      {
+        "name": "isaac.gym.ObservationCollector",
+        "config": {
+          "observation_aggregator": {
+            "joint_state_subscriber": "robot/joint_states",
+            "sensor_subscriber": "robot/sensors",
+            "observation_publisher": "robot/observations"
+          }
+        }
+      }
+    ],
+    "connections": [
+      {
+        "source": "robot/joint_states",
+        "target": "isaac.gym.ObservationCollector/joint_state_subscriber"
+      },
+      {
+        "source": "robot/sensors",
+        "target": "isaac.gym.ObservationCollector/sensor_subscriber"
+      },
+      {
+        "source": "robot/observations",
+        "target": "isaac.gym.RewardGenerator/observation_subscriber"
+      },
+      {
+        "source": "robot/actions",
+        "target": "isaac.gym.RewardGenerator/action_subscriber"
+      }
+    ]
+  }
+}

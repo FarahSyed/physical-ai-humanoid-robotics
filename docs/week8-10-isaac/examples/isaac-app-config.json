@@ -1,0 +1,56 @@
+{
+  "app": {
+    "name": "humanoid_perception_pipeline",
+    "modules": [
+      {
+        "name": "isaac.navigation.ObstaclePointcloud",
+        "config": {
+          "pointcloud_obstacle_subscriber": {
+            "pointcloud_subscriber": "camera/depth/points",
+            "frame": "base_link"
+          },
+          "obstacle_pointcloud_publisher": {
+            "obstacle_pointcloud_publisher": "navigation/obstacles",
+            "frame": "map"
+          }
+        }
+      },
+      {
+        "name": "isaac.perception.DetectNet",
+        "config": {
+          "camera": {
+            "camera_subscriber": "camera/rgb/image_rect_color",
+            "camera_info_subscriber": "camera/rgb/camera_info"
+          },
+          "detections": {
+            "detections_publisher": "perception/detections",
+            "debug_segmentation_publisher": "perception/debug_segmentation"
+          }
+        }
+      },
+      {
+        "name": "isaac.manipulation.GraspPlanner",
+        "config": {
+          "input": {
+            "object_subscriber": "perception/detections",
+            "robot_state_subscriber": "robot/state"
+          },
+          "output": {
+            "grasp_candidate_publisher": "manipulation/grasps",
+            "grasp_quality_publisher": "manipulation/grasp_quality"
+          }
+        }
+      }
+    ],
+    "connections": [
+      {
+        "source": "camera/rgb/image_rect_color",
+        "target": "perception.DetectNet/camera_subscriber"
+      },
+      {
+        "source": "perception/detections",
+        "target": "manipulation.GraspPlanner/object_subscriber"
+      }
+    ]
+  }
+}

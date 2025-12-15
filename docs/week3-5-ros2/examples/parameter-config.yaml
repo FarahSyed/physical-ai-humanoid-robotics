@@ -1,0 +1,47 @@
+# parameter-config.yaml
+# Configuration file for humanoid robot parameters
+
+/**:
+  ros__parameters:
+    # Robot identification
+    robot_name: "humanoid_robot"
+    robot_serial: "HR-2025-001"
+    robot_version: "1.0.0"
+
+    # Control parameters
+    controller_frequency: 100.0
+    max_joint_velocity: 2.0
+    max_joint_acceleration: 5.0
+    position_tolerance: 0.01
+    velocity_tolerance: 0.05
+
+    # Safety parameters
+    safety_timeout: 0.5
+    emergency_stop_threshold: 0.1
+    joint_limit_safety_factor: 0.95
+    enable_safety: true
+
+    # Communication parameters
+    joint_state_publish_rate: 50.0
+    tf_publish_rate: 100.0
+    diagnostic_publish_rate: 10.0
+
+    # Hardware interface parameters
+    hardware_command_topic: "/hardware_commands"
+    hardware_state_topic: "/hardware_states"
+    enable_hardware_sync: true
+
+    # Logging parameters
+    enable_logging: true
+    log_level: "info"
+    log_directory: "/var/log/humanoid"
+
+    # Perception parameters
+    camera_frame_rate: 30.0
+    lidar_frequency: 10.0
+    imu_publish_rate: 100.0
+
+    # Navigation parameters
+    max_linear_velocity: 1.0
+    max_angular_velocity: 1.5
+    min_obstacle_distance: 0.5

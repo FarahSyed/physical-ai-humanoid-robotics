@@ -1,5 +1,6 @@
 # Dependencies
 node_modules/
+pip-selfcheck.json
 
 # Build outputs
 build/
@@ -24,6 +25,49 @@ yarn-error.log*
 # Coverage
 coverage/
 .nyc_output/
+
+# ROS 2 specific
+install/
+build_isolated/
+devel/
+devel_isolated/
+log/
+*.pyc
+__pycache__/
+*.so
+*.o
+*.a
+*.dll
+*.dylib
+*.egg-info/
+.ros/
+.roslog
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+.ENV
+.venv.bak
+venv.bak
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.git/modules/
+.pytest_cache/
+.hypothesis/
 
 # OS generated files
 .DS_Store

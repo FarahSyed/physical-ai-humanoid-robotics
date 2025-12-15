@@ -1,0 +1,63 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .title { font: bold 24px sans-serif; fill: #333; }
+    .subtitle { font: 18px sans-serif; fill: #666; }
+    .component { font: 14px sans-serif; fill: white; }
+    .label { font: 14px sans-serif; fill: #333; }
+    .arrow { stroke: #666; stroke-width: 2; marker-end: url(#arrowhead); }
+    .box { fill: #4CAF50; stroke: #388E3C; stroke-width: 2; rx: 10; ry: 10; }
+    .container { fill: #E3F2FD; stroke: #1976D2; stroke-width: 2; }
+  </style>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7"
+      refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" class="title">Gazebo Simulation Architecture</text>
+  <text x="400" y="70" text-anchor="middle" class="subtitle">Humanoid Robotics Integration</text>
+
+  <!-- Gazebo Core Box -->
+  <rect x="300" y="100" width="200" height="100" class="box"/>
+  <text x="400" y="130" text-anchor="middle" class="component">Gazebo Core</text>
+  <text x="400" y="150" text-anchor="middle" class="label">(Physics Engine, Rendering, Sensors)</text>
+
+  <!-- ROS 2 Bridge Box -->
+  <rect x="300" y="250" width="200" height="80" class="box"/>
+  <text x="400" y="280" text-anchor="middle" class="component">ROS 2 Gazebo Bridge</text>
+  <text x="400" y="300" text-anchor="middle" class="label">(ros_gz, gazebo_ros_pkgs)</text>
+
+  <!-- Humanoid Robot Model Box -->
+  <rect x="50" y="400" width="200" height="80" class="box"/>
+  <text x="150" y="430" text-anchor="middle" class="component">Humanoid Robot Model</text>
+  <text x="150" y="450" text-anchor="middle" class="label">(URDF/SDF Description)</text>
+
+  <!-- Simulation World Box -->
+  <rect x="300" y="400" width="200" height="80" class="box"/>
+  <text x="400" y="430" text-anchor="middle" class="component">Simulation World</text>
+  <text x="400" y="450" text-anchor="middle" class="label">(Environment, Physics)</text>
+
+  <!-- Control Nodes Box -->
+  <rect x="550" y="400" width="200" height="80" class="box"/>
+  <text x="650" y="430" text-anchor="middle" class="component">ROS 2 Control Nodes</text>
+  <text x="650" y="450" text-anchor="middle" class="label">(Controllers, Perception)</text>
+
+  <!-- Arrows -->
+  <line x1="400" y1="200" x2="400" y2="250" class="arrow"/>
+  <line x1="400" y1="330" x2="150" y2="400" class="arrow"/>
+  <line x1="400" y1="330" x2="400" y2="400" class="arrow"/>
+  <line x1="400" y1="330" x2="650" y2="400" class="arrow"/>
+
+  <!-- Annotations -->
+  <text x="420" y="225" class="label">Physics Simulation</text>
+  <text x="250" y="360" class="label">Robot Model</text>
+  <text x="420" y="360" class="label">Environment</text>
+  <text x="570" y="360" class="label">Control Interface</text>
+
+  <!-- Container box for the entire system -->
+  <rect x="20" y="80" width="760" height="430" class="container" fill-opacity="0.1"/>
+  <text x="400" y="530" text-anchor="middle" class="label">Gazebo Simulation Environment</text>
+</svg>

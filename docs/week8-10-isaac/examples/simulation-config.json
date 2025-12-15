@@ -1,0 +1,62 @@
+{
+  "scene": {
+    "name": "humanoid_robot_scene",
+    "assets": [
+      {
+        "type": "robot",
+        "name": "humanoid_robot",
+        "path": "/Isaac/Robots/Humanoid/urdf/humanoid.urdf",
+        "position": [0.0, 0.0, 1.0],
+        "orientation": [0.0, 0.0, 0.0, 1.0]
+      },
+      {
+        "type": "environment",
+        "name": "simple_room",
+        "path": "/Isaac/Environments/SimpleRoom/simple_room.usd",
+        "position": [0.0, 0.0, 0.0]
+      },
+      {
+        "type": "objects",
+        "name": "target_objects",
+        "objects": [
+          {
+            "name": "box_target",
+            "path": "/Isaac/Objects/Cube/cube.usd",
+            "position": [1.0, 0.5, 0.5],
+            "properties": {
+              "mass": 0.5,
+              "color": [1.0, 0.0, 0.0, 1.0]
+            }
+          }
+        ]
+      }
+    ],
+    "sensors": [
+      {
+        "type": "camera",
+        "name": "rgb_camera",
+        "position": [0.1, 0.0, 1.5],
+        "orientation": [0.0, 0.0, 0.0, 1.0],
+        "properties": {
+          "resolution": [640, 480],
+          "fov": 1.047
+        }
+      },
+      {
+        "type": "lidar",
+        "name": "velodyne_lidar",
+        "position": [0.15, 0.0, 1.6],
+        "orientation": [0.0, 0.0, 0.0, 1.0],
+        "properties": {
+          "rpm": 600,
+          "lasers": 16
+        }
+      }
+    ],
+    "physics": {
+      "gravity": [0.0, 0.0, -9.81],
+      "solver": "TGS",
+      "iterations": 8
+    }
+  }
+}

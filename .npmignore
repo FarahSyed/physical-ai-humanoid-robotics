@@ -1,0 +1,98 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+build/
+dist/
+.out/
+.output/
+
+# Environment variables
+.env*
+!.env.example
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Docusaurus
+.docusaurus/
+.temp/
+
+# Coverage
+coverage/
+.nyc_output/
+
+# ROS 2 specific
+install/
+build_isolated/
+devel/
+devel_isolated/
+log/
+*.pyc
+__pycache__/
+*.so
+*.o
+*.a
+*.dll
+*.dylib
+*.egg-info/
+.ros/
+.roslog
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+.ENV
+.venv.bak
+venv.bak
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.git/modules/
+.pytest_cache/
+.hypothesis/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Testing
+coverage/
+.nyc_output/
+
+# System
+.DS_Store
+Thumbs.db
+
+# Documentation source files (not needed in npm package)
+specs/
+history/
+.specify/

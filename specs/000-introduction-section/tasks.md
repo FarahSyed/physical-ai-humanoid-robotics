@@ -22,9 +22,15 @@ This task list implements the fast-track plan for the Introduction section of th
 
 **Task 3**: Develop the Learning Path roadmap with 13-week visual timeline
 - **Location**: `docs/intro/learning-path.md`
-- **Requirements**: Mermaid Gantt chart, learning outcomes table, module breakdown
+- **Requirements**: Mermaid Gantt chart, learning outcomes table, detailed weekly breakdown:
+  - Weeks 1-2: Introduction to Physical AI - Foundations of Physical AI and embodied intelligence, overview of humanoid robotics landscape, sensor systems (LIDAR, cameras, IMUs, force/torque sensors)
+  - Module 1: The Robotic Nervous System (ROS 2): Weeks 3-5 - ROS 2 Nodes, Topics, and Services, bridging Python Agents to ROS controllers using rclpy, understanding URDF for humanoids
+  - Module 2: The Digital Twin (Gazebo & Unity): Weeks 6-7 - Physics simulation and environment building, simulating physics and collisions in Gazebo, high-fidelity rendering in Unity, simulating sensors (LiDAR, Depth Cameras, IMUs)
+  - Module 3: The AI-Robot Brain (NVIDIA Isaac™): Weeks 8-10 - NVIDIA Isaac Sim for photorealistic simulation and synthetic data generation, Isaac ROS for hardware-accelerated VSLAM and navigation, Nav2 for path planning for bipedal humanoid movement
+  - Module 4: Vision-Language-Action (VLA): Weeks 11-12 - Humanoid robot kinematics and dynamics, bipedal locomotion and balance control, manipulation and grasping, natural human-robot interaction design
+  - Week 13: Conversational Robotics - Integrating GPT models for conversational AI, speech recognition and natural language understanding, multi-modal interaction, capstone project: autonomous humanoid with conversational AI
 - **Dependencies**: Mermaid plugin configuration
-- **Acceptance Criteria**: Timeline renders correctly, shows all 13 weeks, includes measurable outcomes
+- **Acceptance Criteria**: Timeline renders correctly, shows detailed 13-week schedule with all specified content, includes measurable outcomes
 
 **Task 4**: Create the Prerequisites page with self-assessment quiz
 - **Location**: `docs/intro/prerequisites.md`
@@ -66,9 +72,15 @@ This task list implements the fast-track plan for the Introduction section of th
 
 **Task 10**: Implement the Mermaid Gantt chart for 13-week timeline
 - **Location**: `docs/intro/learning-path.md`
-- **Requirements**: Mermaid diagram showing ROS 2, Digital Twins, NVIDIA Isaac, VLA modules
+- **Requirements**: Mermaid diagram showing detailed weekly breakdown:
+  - Weeks 1-2: Introduction to Physical AI - Foundations of Physical AI and embodied intelligence, overview of humanoid robotics landscape, sensor systems (LIDAR, cameras, IMUs, force/torque sensors)
+  - Module 1: The Robotic Nervous System (ROS 2): Weeks 3-5 - ROS 2 Nodes, Topics, and Services, bridging Python Agents to ROS controllers using rclpy, understanding URDF for humanoids
+  - Module 2: The Digital Twin (Gazebo & Unity): Weeks 6-7 - Physics simulation and environment building, simulating physics and collisions in Gazebo, high-fidelity rendering in Unity, simulating sensors (LiDAR, Depth Cameras, IMUs)
+  - Module 3: The AI-Robot Brain (NVIDIA Isaac™): Weeks 8-10 - NVIDIA Isaac Sim for photorealistic simulation and synthetic data generation, Isaac ROS for hardware-accelerated VSLAM and navigation, Nav2 for path planning for bipedal humanoid movement
+  - Module 4: Vision-Language-Action (VLA): Weeks 11-12 - Humanoid robot kinematics and dynamics, bipedal locomotion and balance control, manipulation and grasping, natural human-robot interaction design
+  - Week 13: Conversational Robotics - Integrating GPT models for conversational AI, speech recognition and natural language understanding, multi-modal interaction, capstone project: autonomous humanoid with conversational AI
 - **Dependencies**: Docusaurus Mermaid plugin
-- **Acceptance Criteria**: Chart displays correctly, shows 13-week timeline, properly formatted
+- **Acceptance Criteria**: Chart displays correctly, shows detailed 13-week timeline with all specified content, properly formatted
 
 #### Table Creation Tasks
 
@@ -161,11 +173,14 @@ This task list implements the fast-track plan for the Introduction section of th
 
 ### Success Criteria
 - [ ] All 22 tasks completed successfully
-- [ ] Introduction section fully functional with all 7 pages
-- [ ] All 6 mandatory assets created and integrated
+- [ ] Introduction section fully functional with all 7 pages covering Weeks 1-2 content
+- [ ] All 6 mandatory assets created and integrated with detailed 13-week roadmap
 - [ ] Docusaurus site builds without errors
 - [ ] All navigation and cross-references functional
 - [ ] Install script verified on clean system
 - [ ] Zero-friction experience validated for target audience
+- [ ] Detailed 13-week timeline accurately reflects curriculum structure
+- [ ] Introduction section properly establishes foundations for Physical AI and embodied intelligence
+- [ ] Sensor systems content (LIDAR, cameras, IMUs, force/torque sensors) is appropriately covered
 
 This task list is ready for implementation following the Spec-Kit Plus methodology.

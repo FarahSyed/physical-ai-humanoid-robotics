@@ -88,7 +88,13 @@ The project recognizes that the future of AI lies in its physical manifestationâ
 
 **Technical Implementation**
 - Deploy the book using Docusaurus with GitHub Pages integration
-- Structure content in 13-week modules with weekly breakdowns and learning objectives
+- Structure content in 4 modules across 13 weeks with detailed weekly breakdowns and learning objectives:
+  - Weeks 1-2: Introduction to Physical AI - Foundations of Physical AI and embodied intelligence, overview of humanoid robotics landscape, sensor systems (LIDAR, cameras, IMUs, force/torque sensors)
+  - Module 1: The Robotic Nervous System (ROS 2): Weeks 3-5 - ROS 2 Nodes, Topics, and Services, bridging Python Agents to ROS controllers using rclpy, understanding URDF for humanoids
+  - Module 2: The Digital Twin (Gazebo & Unity): Weeks 6-7 - Physics simulation and environment building, simulating physics and collisions in Gazebo, high-fidelity rendering in Unity, simulating sensors (LiDAR, Depth Cameras, IMUs)
+  - Module 3: The AI-Robot Brain (NVIDIA Isaacâ„¢): Weeks 8-10 - NVIDIA Isaac Sim for photorealistic simulation and synthetic data generation, Isaac ROS for hardware-accelerated VSLAM and navigation, Nav2 for path planning for bipedal humanoid movement
+  - Module 4: Vision-Language-Action (VLA): Weeks 11-12 - Humanoid robot kinematics and dynamics, bipedal locomotion and balance control, manipulation and grasping, natural human-robot interaction design
+  - Week 13: Conversational Robotics - Integrating GPT models for conversational AI, speech recognition and natural language understanding, multi-modal interaction, capstone project: autonomous humanoid with conversational AI
 - Implement interactive code playgrounds for simulation examples
 - Include hardware compatibility matrices for RTX workstations, Jetson kits, and robot platforms (Unitree Go2, etc.)
 - Word count: 100,000-150,000 words total (approx. 20,000-30,000 per module, including chapters and supplementary sections)
@@ -132,7 +138,7 @@ The project recognizes that the future of AI lies in its physical manifestationâ
 - Comprehensive coverage of learning outcomes
 
 **Content Quality Metrics**
-- Minimum 20 sources per module (total 80+ for the book)
+- Minimum 20 sources per major module (total 100+ for the complete 13-week curriculum with detailed weekly content)
 - All technical content validated against current documentation and hardware specifications
 - Content accuracy verified through multiple verification sources
 - Technical depth appropriate for target audience (O/A Level to professional level)

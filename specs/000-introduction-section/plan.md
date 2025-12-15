@@ -12,16 +12,22 @@
 - Zero-friction setup experience for 16-year-olds
 
 #### Out of Scope
-- Core content beyond the Introduction section (ROS 2 modules, Digital Twins, etc.)
+- Core content beyond the Introduction section (Modules 1-4: The Robotic Nervous System, Digital Twin, AI-Robot Brain, Vision-Language-Action)
 - Backend infrastructure beyond static site generation
 - Advanced user authentication or personalization
 - Real-time collaboration features
 
 #### External Dependencies
 - **Docusaurus v3**: Static site generator for book deployment
-- **Mermaid**: Diagram rendering for timeline visualization
+- **Mermaid**: Diagram rendering for 13-week timeline visualization:
+  - Weeks 1-2: Introduction to Physical AI - Foundations of Physical AI and embodied intelligence, overview of humanoid robotics landscape, sensor systems (LIDAR, cameras, IMUs, force/torque sensors)
+  - Module 1: The Robotic Nervous System (ROS 2): Weeks 3-5 - ROS 2 Nodes, Topics, and Services, bridging Python Agents to ROS controllers using rclpy, understanding URDF for humanoids
+  - Module 2: The Digital Twin (Gazebo & Unity): Weeks 6-7 - Physics simulation and environment building, simulating physics and collisions in Gazebo, high-fidelity rendering in Unity, simulating sensors (LiDAR, Depth Cameras, IMUs)
+  - Module 3: The AI-Robot Brain (NVIDIA Isaac™): Weeks 8-10 - NVIDIA Isaac Sim for photorealistic simulation and synthetic data generation, Isaac ROS for hardware-accelerated VSLAM and navigation, Nav2 for path planning for bipedal humanoid movement
+  - Module 4: Vision-Language-Action (VLA): Weeks 11-12 - Humanoid robot kinematics and dynamics, bipedal locomotion and balance control, manipulation and grasping, natural human-robot interaction design
+  - Week 13: Conversational Robotics - Integrating GPT models for conversational AI, speech recognition and natural language understanding, multi-modal interaction, capstone project: autonomous humanoid with conversational AI
 - **Ubuntu 22.04**: Target OS for development environment
-- **ROS 2 Humble**: Robot Operating System framework
+- **ROS 2 Humble/Jazzy**: Robot Operating System framework
 - **NVIDIA Isaac Sim**: Simulation environment
 - **Node.js/npm**: Build toolchain dependencies
 - **GitHub Pages**: Deployment platform
@@ -136,9 +142,15 @@
 - **Mitigation**: Maintain version locks and regular updates
 - **Kill Switch**: Branch-based development with staging environment
 
-#### Risk 2: External Dependencies (ROS 2, Isaac Sim)
-- **Blast Radius**: Development environment setup
-- **Mitigation**: Comprehensive documentation and multiple setup paths
+#### Risk 2: External Dependencies (ROS 2, Isaac Sim, Gazebo, Unity)
+- **Blast Radius**: Development environment setup across the full 13-week curriculum
+- **Mitigation**: Comprehensive documentation for all modules:
+  - Weeks 1-2: Introduction to Physical AI - Foundations of Physical AI and embodied intelligence, overview of humanoid robotics landscape, sensor systems (LIDAR, cameras, IMUs, force/torque sensors)
+  - Module 1: The Robotic Nervous System (ROS 2): Weeks 3-5 - ROS 2 Nodes, Topics, and Services, bridging Python Agents to ROS controllers using rclpy, understanding URDF for humanoids
+  - Module 2: The Digital Twin (Gazebo & Unity): Weeks 6-7 - Physics simulation and environment building, simulating physics and collisions in Gazebo, high-fidelity rendering in Unity, simulating sensors (LiDAR, Depth Cameras, IMUs)
+  - Module 3: The AI-Robot Brain (NVIDIA Isaac™): Weeks 8-10 - NVIDIA Isaac Sim for photorealistic simulation and synthetic data generation, Isaac ROS for hardware-accelerated VSLAM and navigation, Nav2 for path planning for bipedal humanoid movement
+  - Module 4: Vision-Language-Action (VLA): Weeks 11-12 - Humanoid robot kinematics and dynamics, bipedal locomotion and balance control, manipulation and grasping, natural human-robot interaction design
+  - Week 13: Conversational Robotics - Integrating GPT models for conversational AI, speech recognition and natural language understanding, multi-modal interaction, capstone project: autonomous humanoid with conversational AI
 - **Kill Switch**: Containerized development environment
 
 #### Risk 3: Hardware Compatibility Issues
