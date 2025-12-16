@@ -11,16 +11,16 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-test-site.example.com',
+  url: 'https://FarahSyed.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub Pages: https://<USERNAME>.github.io/<REPO>/
-  baseUrl: '/',
+  baseUrl: '/physical-ai-humanoid-robotics/',
 
   // GitHub pages deployment config.
-  organizationName: 'facebook',
-  projectName: 'docusaurus',
+  organizationName: 'FarahSyed',
+  projectName: 'physical-ai-humanoid-robotics',
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internalization, you can use this field to set useful
