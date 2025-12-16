@@ -121,6 +121,12 @@ The project recognizes that the future of AI lies in its physical manifestationâ
 - Implement automated deployment pipelines triggered by content updates
 - Maintain versioned documentation for different hardware and software configurations
 - Include comprehensive deployment documentation for local development environments
+- All static frontends using Docusaurus must be configured for GitHub Pages hosting
+- `baseUrl`, `organizationName`, and `projectName` in Docusaurus config MUST be set correctly for GitHub Pages
+- A `.nojekyll` file MUST be included in build output to prevent pages ignoring files starting with `_`
+- Production build output must be assembled into a single `frontend/` folder at the root and contain all static site assets and configuration files (including `.nojekyll` if necessary)
+- A clear automated deployment workflow for GitHub Pages (either via GitHub Actions or a `gh-pages` branch script) must be included and version-controlled
+- Environment variable usage must be documented with an `.env.production.example` file stored in the repository
 
 **Content Distribution**
 - Provide multiple export formats (PDF, EPUB, print-ready) for accessibility

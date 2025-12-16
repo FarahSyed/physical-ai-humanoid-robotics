@@ -20,7 +20,8 @@
       "Bash(cat .gitignore)",
       "Bash(wc -w docs/week8-10-isaac/chapter-*.md)",
       "Bash(git fetch --all --prune)",
-      "Bash(rm -rf \"E:/New folder/New folder/physical-ai-humanoid-robotics/folderphysical-ai-humanoid-roboticsspecs001-conversational-robotics\")"
+      "Bash(rm -rf \"E:/New folder/New folder/physical-ai-humanoid-robotics/folderphysical-ai-humanoid-roboticsspecs001-conversational-robotics\")",
+      "Bash(.specify/scripts/bash/check-prerequisites.sh --json)"
     ],
     "deny": [],
     "ask": []

@@ -105,6 +105,38 @@ This project welcomes contributions from the community. We follow a Spec-Driven 
 
 This project is open-source and follows the principles of community-driven development and knowledge sharing for the advancement of physical AI and humanoid robotics education.
 
+## Deployment to GitHub Pages
+
+This project is configured for deployment to GitHub Pages. The site will be automatically deployed when changes are pushed to the main branch.
+
+### Deployment Configuration
+- Site URL: `https://FarahSyed.github.io/physical-ai-humanoid-robotics/`
+- Base URL: `/physical-ai-humanoid-robotics/`
+- Organization: `FarahSyed`
+- Project: `physical-ai-humanoid-robotics`
+
+### Build Process
+- The site is built using Docusaurus with the `npm run build:frontend` command
+- Build output is placed in the `frontend/` directory
+- A `.nojekyll` file is included to prevent GitHub Pages from processing files with underscores
+
+### GitHub Actions Workflow
+- Automated deployment triggered on push to main branch
+- Workflow file: `.github/workflows/deploy.yml`
+- Uses `actions/deploy-pages` for deployment
+- Runs on Ubuntu with Node.js 20
+
+### Manual Deployment
+To build the site locally for testing:
+```bash
+npm run build:frontend
+```
+
+The built site will be available in the `frontend/` directory and can be served locally with:
+```bash
+npx serve frontend/
+```
+
 ---
 
 *This repository is maintained as part of the Physical AI & Humanoid Robotics educational initiative, designed to create the next generation of roboticists and AI practitioners while advancing the responsible development of embodied intelligence systems.*
