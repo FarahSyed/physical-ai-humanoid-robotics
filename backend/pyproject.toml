@@ -1,0 +1,16 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = "RAG Chatbot - Website Content Extraction and Embedding Pipeline"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "requests>=2.31.0",
+    "beautifulsoup4>=4.12.0",
+    "cohere>=4.9.0",
+    "qdrant-client>=1.9.0",
+    "python-dotenv>=1.0.0",
+    "lxml>=4.9.0",
+    "playwright>=1.40.0",
+    "pytest>=7.4.0",
+]
