@@ -33,6 +33,12 @@
 
 [Gates determined based on constitution file]
 
+**RAG Chatbot Compliance Check (if applicable)**:
+- Verify that any RAG system implementation adheres to RAG Chatbot Global Principles (accuracy, grounding, scope enforcement, deterministic refusal, confidence tracking)
+- Confirm that content indexing follows RAG Chatbot Content Standards (Qdrant embeddings with semantic similarity and metadata tags)
+- Ensure operational rules are followed (API validation, database integrity, logging, security)
+- Validate deployment integration (frontend embedding, attribution, testing)
+
 ## Project Structure
 
 ### Documentation (this feature)

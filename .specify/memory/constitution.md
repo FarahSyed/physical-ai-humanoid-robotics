@@ -1,17 +1,17 @@
 <!--
 Sync Impact Report:
-- Version change: 1.0.0 → 1.2.0 (Minor: Consolidated duplicated requirements, added version tracking and compliance monitoring)
-- Modified principles: Content Verification & Citation Requirements, Quality Assurance (removed duplicated plagiarism requirement), Learning Outcomes (removed duplicated learning outcomes requirement)
-- Added sections: Compliance Monitoring
+- Version change: 1.2.0 → 1.3.0 (Minor: Added RAG Chatbot principles and operational rules)
+- Modified principles: None
+- Added sections: RAG Chatbot Global Principles, RAG Chatbot Content Standards, RAG Chatbot Operational Rules, RAG Chatbot Deployment Integration
 - Templates requiring updates: ⚠ pending review of .specify/templates/plan-template.md, .specify/templates/spec-template.md, .specify/templates/tasks-template.md
 - Follow-up TODOs: None
 -->
 
 # Physical AI & Humanoid Robotics: Embodied Intelligence in Action
 ## Project Constitution
-**Version:** 1.2.0
+**Version:** 1.3.0
 **Ratification Date:** 2025-01-01
-**Last Amended:** 2025-12-13
+**Last Amended:** 2025-12-20
 
 ### Preamble: Project Vision and Purpose
 
@@ -70,6 +70,32 @@ The project recognizes that the future of AI lies in its physical manifestation�
 - Ensure gender-neutral language and diverse representation in case studies
 - Consider accessibility requirements for students with different abilities
 - Address economic accessibility of recommended hardware and software tools
+
+### RAG Chatbot Principles
+
+**RAG Chatbot Global Principles**
+- Accuracy through selective retrieval: always prefer user-selected text when available
+- Grounding: answers must be traceable to embeddings stored in Neon Postgres and Qdrant, or explicitly flagged as speculative if outside available context
+- Scope enforcement: respond only within the context of the book and related verified content; refuse to answer unrelated topics
+- Deterministic refusal: chatbot must return a clear refusal statement if context is insufficient, avoiding hallucinations
+- Confidence tracking: maintain a confidence score and log for every response
+
+**RAG Chatbot Content Standards**
+- Index all book modules, chapters, and supplementary materials into Qdrant embeddings with semantic similarity and metadata tags
+- Maintain strict versioning of embeddings aligned with book versions
+- Validate all embedding updates and query responses against primary source citations in the book
+- Include fallback rules for unanswered queries, e.g., suggest user review the relevant section
+
+**RAG Chatbot Operational Rules**
+- API Layer: FastAPI endpoints must validate input length, sanitize queries, and ensure embeddings retrieval efficiency
+- Database: Neon Postgres stores structured metadata for chapters, sections, and embeddings; ensure transactional integrity during updates
+- Logging: capture query text, selected text references, model output, and timestamp for audit
+- Security: restrict access to embeddings and book content to authorized endpoints
+
+**RAG Chatbot Deployment Integration**
+- Embed chatbot in Docusaurus frontend with clear attribution of source text
+- Include automated tests for retrieval accuracy, refusal behavior, and performance benchmarks
+- Document RAG system architecture and operational guidelines in book appendix
 
 ### Development Standards
 
@@ -163,6 +189,7 @@ All project activities must undergo regular compliance reviews to ensure adheren
 3. Regular plagiarism scans using automated tools to maintain 0% tolerance standard
 4. Accessibility compliance checks to ensure WCAG 2.1 standards are maintained
 5. Code coverage monitoring to maintain 95%+ test coverage requirements
+6. RAG system compliance: verify that chatbot responses meet grounding, accuracy, and scope enforcement requirements
 
 ### Amendment Process
 
@@ -180,3 +207,14 @@ Amendments addressing safety, ethical concerns, or major technological shifts ma
 All contributors to the "Physical AI & Humanoid Robotics: Embodied Intelligence in Action" project commit to upholding these principles, maintaining the highest standards of educational excellence, technical accuracy, and ethical responsibility. We pledge to create an inclusive, accessible, and technically rigorous resource that empowers the next generation of roboticists and AI practitioners while advancing the responsible development of embodied intelligence systems.
 
 This constitution serves as our shared commitment to excellence, ethics, and educational impact in the rapidly evolving field of physical AI and humanoid robotics.
+
+### RAG Chatbot Success Criteria
+
+- Zero unverified or hallucinated answers for queries within book content
+- Accurate, traceable responses for selected text queries
+- Logs and metrics showing confidence, retrieval success, and error handling
+
+### RAG Chatbot Constraints
+
+- Chatbot must only operate on content included in the book and its verified supplementary sources
+- Do not allow responses based on external web data unless explicitly authorized and documented
