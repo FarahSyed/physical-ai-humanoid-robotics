@@ -92,3 +92,14 @@ coverage/
 # System
 .DS_Store
 Thumbs.db
+
+# Archive files
+*.zip
+*.tar
+*.gz
+*.rar
+*.7z
+
+# Data folders (to avoid committing large data files)
+data/
+backend/data/

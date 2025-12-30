@@ -1,0 +1,40 @@
+{
+  "name": "extract-to-embeddings",
+  "title": "Content Extraction to Qdrant Embeddings",
+  "description": "Complete pipeline from content extraction to vector embeddings storage in Qdrant database",
+  "version": "1.0.0",
+  "author": "Claude",
+  "module": "backend.src.embeddings_pipeline.extract_to_embeddings_pipeline",
+  "function": "main",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "chunk_file_path": {
+        "type": "string",
+        "description": "Path to the chunked content JSON file",
+        "default": "data/chunked/chunked_content.json"
+      }
+    },
+    "required": []
+  },
+  "examples": [
+    {
+      "description": "Process default chunked content file",
+      "arguments": {}
+    },
+    {
+      "description": "Process custom chunked content file",
+      "arguments": {
+        "chunk_file_path": "data/chunked/chunked_content.json"
+      }
+    }
+  ],
+  "categories": [
+    "ai",
+    "nlp",
+    "vector-database",
+    "embeddings",
+    "qdrant",
+    "pipeline"
+  ]
+}
