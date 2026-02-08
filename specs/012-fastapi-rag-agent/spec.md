@@ -2,7 +2,9 @@
 
 **Feature Branch**: `012-fastapi-rag-agent`
 **Created**: 2025-12-30
-**Status**: Draft
+**Completed**: 2025-12-30
+**Status**: Complete
+**PR**: https://github.com/FarahSyed/physical-ai-humanoid-robotics/pull/new/012-fastapi-rag-agent
 **Input**: User description: "Build a minimal FastAPI RAG agent using OpenAI Agents SDK and Qdrant Cloud with Qwen API.
 
 The system must:
